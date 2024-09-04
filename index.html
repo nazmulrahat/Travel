@@ -12,25 +12,29 @@
 
 </head>
 <body id="tttrrr" class="h-screen flex flex-col justify-around items-center mx-10">
-  <div class="bg"></div>
+  <div class=" bg"></div>
 <div class="bg bg2"></div>
 <div class="bg bg3"></div>
 
 
-    <section class="flex gap-3 text-2xl font-extrabold ">
+    <section id="RRR" class="flex flex-col gap-3 md:flex-row   text-2xl font-extrabold  ">
 
     <h1 class="">Card Added: <samp id="added-card">0</samp></h1> 
-    <br> <p>|||</p>
-        <H1>Total Budget:</H1>
+    <br> 
+        <div class="flex flex-row">
+          <div>
+            <H1 class="text-wrap">Total Budget:</H1>
+          </div>
         <div class="flex">
           <h1 id="beget">900</h1>
         <h1>$</h1>
         </div>
+        </div>
     </section>
 <!-- ............... -->
- <section class="flex flex-row justify-around pt-9 gap-20">
+ <section class="flex flex-col lg:flex-row  justify-around pt-9 gap-20 ">
     <!-- card -->
-    <div class="grid grid-cols-2 justify-around gap-6 ">
+    <div class="grid grid-cols-1 lg:grid-cols-2 justify-around gap-6 ">
       <div class="flex flex-col text-center gap-3 items-center w-80 bg-lime-500 pb-4 border-amber-300 border-4">
         <img class="hover:animate-pulse" src="img/rt.jpg" alt="">
      
@@ -84,8 +88,9 @@
                 </div>
             </div>
             <br>
-            <div class="flex  gap-8 ">
+            <div class=" lg:flex flex-col gap-8  ">
               <input id="kupon" type="text" placeholder="Input Kupon"class="input input-bordered input-accent w-full max-w-xs" />
+              
               <button id="kbtn" class="btn w-28 btn-warning">Apply</button>
             </div>
             <br>
